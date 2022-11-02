@@ -1,0 +1,13 @@
+.home {
+    margin: 0.5%;
+&_products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    background:#F7F7F7;;
+    padding: 50px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    }
+}

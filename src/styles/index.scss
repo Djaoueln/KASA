@@ -1,0 +1,22 @@
+@import '../styles/NavBar.scss';
+@import '../styles/Thumbnails.scss';
+@import '../styles/HeroBanner.scss';
+@import '../styles/Home.scss';
+
+body{
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    background-color: white;
+}
+
+
+
