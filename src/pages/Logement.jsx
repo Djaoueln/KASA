@@ -13,7 +13,6 @@ import Rating from "../components/Rating";
 function Logement() {
   const { id } = useParams(true);
   const logement = data.find((item) => item.id === id);
-  window.scrollTo(0, 0);
     if (!logement) {
       return <Error />;
     }
