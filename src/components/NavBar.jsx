@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import '../styles/NavBar.scss';
 import logo from '../assets/logo.svg'
+
 const Header = () => {
     return (
       <nav className="nav">
@@ -9,11 +10,11 @@ const Header = () => {
             />
          <div className="nav-link">
              <NavLink to="/" className={({ isActive }) =>
-            isActive ? "navb-link--active" : "navb-link--inactive"}> 
+            isActive ? "nav-link--active" : "nav-link--inactive"}> 
               Accueil
              </NavLink>
              <NavLink to="/about" className={({ isActive }) =>
-            isActive ? "nav-link--active" : "navb-link--inactive"}>
+            isActive ? "nav-link--active" : "nav-link--inactive"}>
               A propos
              </NavLink>
            </div>

@@ -6,7 +6,7 @@ import "../styles/Tag.scss";
 function Tag(props){
     return (
         <div className="tag">
-            <span>{props.text}</span>
+            <span className="tag_text">{props.text}</span>
         </div>
     )
 }

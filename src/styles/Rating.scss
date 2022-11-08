@@ -1,0 +1,21 @@
+.red{
+    color: #FF6060;;
+}
+.grey{
+    color: #E3E3E3;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    &_stars {
+        margin-right: 5px;
+        @media screen and (max-width: 768px) {
+            height: 24px;
+        }
+        @media screen and (min-width: 1200px) {
+            height: 30px;
+        }
+            
+        }
+            
+        }

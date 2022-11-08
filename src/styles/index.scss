@@ -2,14 +2,19 @@
 @import '../styles/Thumbnails.scss';
 @import '../styles/HeroBanner.scss';
 @import '../styles/Home.scss';
+@import '../styles/About.scss';
+@import '../styles/Tag.scss';
+@import '../styles/Error.scss';
+@import '../styles/Collapse.scss';
+@import '../styles/SlideShow.scss';
+@import '../styles/Logement.scss';
+
 
 body{
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     max-width: 1440px;
     margin: auto;
     position: relative;
+    min-height: 100vh;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;

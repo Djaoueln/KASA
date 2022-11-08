@@ -10,18 +10,9 @@ import txt from "../data/txtData";
 
 const txtHome = txt.txtHome
 const Products =() => {
- 
-  // useEffect(() => { 
-  //   fetch("../data/data.json")
-  //   .then((response) => response.json())
-  //   .then((data) =>  (data));
-  // }, []);
-
-
-
   return (
     <div className="home">
-      <div className="home_Banner">
+      <div className="home_banner">
         <Herobanner title={txtHome} image={image} />
       </div>{""}
     <section className="home_products">

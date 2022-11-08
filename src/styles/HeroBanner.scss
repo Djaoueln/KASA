@@ -1,40 +1,73 @@
- .thumb_HeroBanner {
-     width: 100%;
-     height: 225px;
-     position: relative;
-     margin-bottom: 20px;
-     border-radius: 25px;
-     animation: fadeInUp 600ms ease-in-out;
-     overflow: hidden;
-    
-    
-img{
-  position: absolute;
-      width: 100%;
-      height: 100%;
-      transition: all 0.5s ease;
-      filter: brightness(0.7);
-      transform: scale(1.1);
-    }
-
- &_titleBanner {
- 
-     color: white;
-     }
-    
-  
-
-     @keyframes fadeInUp {
-              0% {
-                opacity: 0;
-                transform: translateY(5px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+ .heroBanner{
+  align-items: center;
+  background: #ff6060;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  margin: 0 0 20px;
+  overflow: hidden;
+  position: relative;
+        @media screen and (min-width: 320px){
+            height: 111px;
         }
+       @media screen and (min-width: 768px) {
+          height: 167px;
+       }
+      @media screen and (min-width: 1200px) {
+         justify-content: center;
+         font-size: 48px;
+         border-radius: 25px;
+         margin: 0 0 40px;
       }
+
+
+ &_img{
+  height: 111px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+    @media screen and (min-width: 1200px) {
+      height: 223px;
+      
+    }
+  
+     }
+
+
+    
+    
+&_title {
+  position: absolute;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0 0 0 16px;
+     @media screen and (min-width: 320px) {
+      font-size: 24px;
+      
+     }
+     @media screen and (min-width: 768px) {
+      font-size: 36px;
+      justify-content: center;
+      align-items: center;
+
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+
+         }
+    }
+        
+  @keyframes fadeInUp {
+           0% {
+             opacity: 0;
+             transform: translateY(5px);
+         }
+         100% {
+             opacity: 1;
+             transform: translateY(0);
+         }
+     }
+   }
 
 
 

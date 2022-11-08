@@ -1,9 +1,33 @@
-.Carousel
-       {
-        height: 415px;
-width: 1240px;
-left: 100px;
-top: 128px;
-border-radius: 0px;
-
+.slider {
+       position: relative;
+       // height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    
+ .image_slide{
+           width: 1000px;
+           height: 500px;
+           border-radius: 10px;
        }
+.arrow_forward{
+position: absolute;
+top: 50%;
+right: 32px;
+font-size: 3rem;
+z-index: 10;
+cursor: pointer;
+color: #fff;
+user-select: none;
+          }
+.arrow_back{
+position: absolute;
+ top: 50%;
+ left: 32px;
+ font-size: 3rem;
+ z-index: 10;
+ cursor: pointer;
+ color: #fff;
+ user-select: none;
+               }
+}

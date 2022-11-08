@@ -1,6 +1,6 @@
 import React from "react";
 import HeroBanner from "../components/HeroBanner";
-import HBAbout from "../assets/HBAbout.svg";
+import aboutHb from "../assets/aboutHb.avif";
 import Collapse from "../components/Collapse";
 
 function About() {
@@ -18,9 +18,11 @@ function About() {
         }
 ]
     return (
-        <div>
-            <HeroBanner img={HBAbout} />
-            <div className="about">
+        <div className="about">
+        <div className="about_heroBanner">
+             <HeroBanner image={aboutHb} />
+             </div>
+            <div className="collapse_about">
                 {  collapseTxt.map((one, i) => {
                     return (
                     <Collapse intitulé={one.intitulé} text={one.text} key={i} />
@@ -28,6 +30,7 @@ function About() {
                 })    
                 }
         </div>
+
         </div>
     )
 
