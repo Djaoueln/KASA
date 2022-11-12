@@ -1,8 +1,7 @@
-.red{
-    color: #FF6060;;
-}
-.grey{
+
+.inactive{
     color: #E3E3E3;
+    color-scheme: #E3E3E3;
 }
 .rating{
     display: flex;
@@ -14,8 +13,6 @@
         }
         @media screen and (min-width: 1200px) {
             height: 30px;
-        }
-            
-        }
-            
+        }   
+        }     
         }

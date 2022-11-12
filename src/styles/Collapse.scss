@@ -2,14 +2,14 @@
 .collapse {
     width: 100%;
     overflow: hidden;
-    margin: 0 auto 2rem;
+    margin: 0 auto 32px;
      @media screen and (min-width: 768px) {
         width: 90%;
-        margin: 0 auto 2rem;
+        margin: 0 auto 32px;
      }
      @media screen and (min-width: 992px) {
         width: 80%;
-        margin: 0 auto 2rem;
+        margin: 0 auto 32px;
      }
         
      
@@ -25,6 +25,7 @@
     height: 30px;
     @media screen and (min-width: 768px) {
         height: 40px;
+        border-radius: 10px;
     }
     @media screen and (min-width: 992px) {
         height: 47px;

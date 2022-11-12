@@ -23,7 +23,7 @@ function Logement() {
             </div>
                 <div className="logement_content">
                     <div className="logement_content_left">
-                    <h1 className="logement_content_left_tile">{logement.title}</h1>
+                    <h1 className="logement_content_left_title">{logement.title}</h1>
                     <p className="logement_content_left_location">{logement.location}</p>
                     <div className="logement_content_left_tags">
                         {logement.tags.map((tags, index) => (
@@ -33,7 +33,7 @@ function Logement() {
                     </div>
                 <div className="logement_review">
                 <div className="logement_review_host_info">
-                    <p className="logement_review_host_info_name">{logement.host.name.split(" ")}</p>
+                    <p className="logement_review_host_info_name">{logement.host.name.split(" ")[0]}<br/>{logement.host.name.split(" ")[1]}</p>
                     <img src={logement.host.picture} alt="" />
                 </div>
                  <Rating rating={logement.rating} />

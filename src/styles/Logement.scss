@@ -1,21 +1,33 @@
 .logement{
   margin: 0 20px;
+     
+        
+      
   &_content{
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+    color: #FF6060;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1200px) {
         flex-direction: column;
     }
     &_left{
       &_title{
         font-weight: 500;
         font-size: 18px;
-      }
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+        }    
+        }
+      
       &_location{
         margin-top: .5rem;
         margin-bottom: 2rem;
+      @media screen and (min-width: 1200px) {
+         font-size: 18px;
+      }
+        
       }
       &_tags{
         display: flex;
@@ -30,6 +42,15 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       margin-bottom: 15px;
+      @media screen and (min-width: 1200px) {
+          flex-direction: column;
+      }
+      img{
+        @media screen and (max-width: 1200px) {
+          height: 15px;
+          width: 15px;
+        }
+      }
       &_host_info{
         align-items: center;
         display: flex;
@@ -37,13 +58,49 @@
           font-size: 12px;
           margin-right: 10px;
          text-align: end;
+         @media screen and (min-width: 1200px) {
+          font-size: 18px;
+         }
          }
          img{
           border-radius: 50%;
-    height: 32px;
-    width: 32px;
+          height: 32px;
+          width: 32px;
+          @media screen and (min-width: 1200px) {
+            height: 64px;
+            width: 64px;
+            
+          }
          }
       }
-
   }
-}
+ &_collapse{
+  
+  .collapse_content{
+    list-style: none;
+    li{
+      margin-top:2px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    .collapse_content{
+      font-size: 18px;
+     }
+    }
+     p{
+      font-size: 13px;
+     }
+    
+     
+    
+   }
+  }
+
+
+ 
+ 

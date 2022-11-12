@@ -8,10 +8,14 @@
     font-size: 10px;
     font-style: normal;
     font-weight: 500;
-    height: 18px;
     justify-content: center;
-    min-width: 84px;
     padding: 0 10px;
+    width: 84px;
+    @media screen and (min-width: 758px) {
+        width: 115px;
+        height: 25px;
+    }
+        
     }
 
 
