@@ -14,19 +14,15 @@ function Collapse(props) {
 
     return (
     <div className="collapse">
-        <div className="collapse_container">
-        <div className="collapse_header">
-            <div className="collapse_title" onClick={toggle}>
-                <h4>{props.intitulé}</h4>
+        <div className="collapse_header"onClick={toggle}>
+                <p>{props.intitulé}</p>
                 <span>{open ? Chevron_down : Chevron_up}</span>
             </div>    
-        </div> 
         {open && (
             <div className="collapse_content ">
              {props.text} 
             </div>
         )}
-    </div>
     </div>
 
     )

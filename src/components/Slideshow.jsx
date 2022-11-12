@@ -1,13 +1,13 @@
   import React, {useState} from "react";
-  import data from "../data/data.json"
+//   import data from "../data/data.json"
   import '../styles/SlideShow.scss';
   import arrowBack from "../assets/arrowBack.svg";
     import arrowForward from "../assets/arrowForward.svg";
 
   function Slideshow ({ pictures}) {
-   const [current, setCurrent] = useState(1);
+
+   const [current, setCurrent] = useState(0);
     const length = pictures.length;
-    
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
     };
@@ -24,14 +24,15 @@
 
      return (
           <section className="slider">
+                <div className="slider__container">
                <img src={arrowBack} alt="" className="arrow_back" onClick={prevSlide} />
                 <img src={arrowForward} alt="" className="arrow_forward" onClick={nextSlide}/>
-
-             {data.map((slide, index) => {
+                </div>
+             {pictures.map((slide, index) => {
                     return (
                         <div className={index === current ? "slide active" : "slide"} key={index}>
                             {index === current && (
-                                <img src={slide.pictures} alt="house" className="image_slide"/>
+                                <img src={slide} alt="house" className="slide_image"/>
                                 )}    
                         </div>
                     )

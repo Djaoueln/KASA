@@ -1,6 +1,37 @@
 .home {
     margin: 4.5%;
+    .home_banner{
+      align-items: center;
+    background: #ff6060;
+    border-radius: 10px;
+    color: #fff;
+    // display: flex;
+    margin: 0 0 20px;
+    overflow: hidden;
+    position: relative;
     
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+      font-size: 48px;
+      border-radius: 25px;
+      margin: 0 0 40px;
+      height: 223px;
+    }
+     img{
+      height: 111px;
+      // width: 335px;
+      @media screen and (min-width: 768px) {
+        height: 167px;
+        
+      }
+      @media screen and (min-width: 1200px) {
+        height: 223px;
+        
+      }
+    }
+  }
+          
+        
     
 &_products {
   
@@ -29,3 +60,4 @@
       }
     }
     }
+  

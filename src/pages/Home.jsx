@@ -4,7 +4,7 @@ import data from "../data/data.json";
 import Thumbnails from "../components/Thumbnails";
 import Herobanner from "../components/HeroBanner";
 
-import image from "../assets/Banner.jpg";
+import image from "../assets/HeroBannerImg.jpg";
 import { Link } from "react-router-dom";
 import txt from "../data/txtData";
 

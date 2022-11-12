@@ -9,7 +9,7 @@ const Header = () => {
             <img src={logo}alt="Logo kasa"className="nav-logo"
             />
          <div className="nav-link">
-             <NavLink to="/" className={({ isActive }) =>
+             <NavLink to="/home" className={({ isActive }) =>
             isActive ? "nav-link--active" : "nav-link--inactive"}> 
               Accueil
              </NavLink>

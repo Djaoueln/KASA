@@ -22,7 +22,7 @@ function About() {
         <div className="about_heroBanner">
              <HeroBanner image={aboutHb} />
              </div>
-            <div className="collapse_about">
+            <div className="about_collapse">
                 {  collapseTxt.map((one, i) => {
                     return (
                     <Collapse intitulé={one.intitulé} text={one.text} key={i} />
