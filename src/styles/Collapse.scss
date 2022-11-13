@@ -4,15 +4,11 @@
     overflow: hidden;
     margin: 0 auto 32px;
      @media screen and (min-width: 768px) {
-        width: 90%;
         margin: 0 auto 32px;
      }
      @media screen and (min-width: 992px) {
-        width: 80%;
         margin: 0 auto 32px;
      }
-        
-     
 &_header {
     cursor: pointer;
     display: flex;
@@ -21,7 +17,7 @@
     background-color: #ff6060;
     border-radius: 5px;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 16px;
     height: 30px;
     @media screen and (min-width: 768px) {
         height: 40px;
@@ -32,7 +28,7 @@
         
     }
     p {
-    font-weight: 500;
+    font-weight: 400;
     font-size:  13px;
     @media screen and (min-width: 768px) {
         font-size:  15px;
@@ -50,16 +46,24 @@
     border-radius: 5px;
     padding: 1rem;
     background-color: #F7F7F7;
-    font-weight: 400;
-    font-size: 12px;
-    height: 143px;
+    p{ font-weight: 400;
+      font-size: 12px;
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
+      }
+      @media screen and (min-width: 992px) {
+        font-size: 24px;
+      }
+   }
+   
+
     color: #ff6060;
     @media screen and (min-width: 768px) {
-        height: 143px;
+  
         font-size: 24px;
      }
      @media screen and (min-width: 992px) {
-        height: 146px;
+       font-weight: 400;
         font-size: 24px;
      }
 

@@ -24,8 +24,8 @@
 
      return (
           <section className="slider">
-                <div className="slider__container">
-               <img src={arrowBack} alt="" className="arrow_back" onClick={prevSlide} />
+                <div className="slider_container">
+                <img src={arrowBack} alt="" className="arrow_back" onClick={prevSlide} />
                 <img src={arrowForward} alt="" className="arrow_forward" onClick={nextSlide}/>
                 </div>
              {pictures.map((slide, index) => {

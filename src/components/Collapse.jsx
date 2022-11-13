@@ -20,7 +20,7 @@ function Collapse(props) {
             </div>    
         {open && (
             <div className="collapse_content ">
-             {props.text} 
+             <p>{props.text}</p>
             </div>
         )}
     </div>

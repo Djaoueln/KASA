@@ -1,70 +1,57 @@
 .slider {
-       position: relative;
-       width: 100%;
-  height: 255px;
-  border-radius: 10px;
   background: #ff6060;
+  border-radius: 10px;
+  height: 255px;
   overflow: hidden;
-  display: flex;
-       justify-content: center;
-       align-items: center;
-&_container{
-.arrow_forward{
-       position: absolute;
-       top: 50%;
-       right: 32px;
-font-size: 3rem;
-z-index: 10;
-cursor: pointer;
-color: #fff;
-user-select: none;
-       background: linear-gradient(
-         90deg,
-         rgba(255, 255, 255, 0) 0%,
-         rgba(0, 0, 0, 0.5) 100%
-         );
-               width: 20px;
-               height: auto;
-
-          }
-.arrow_back{
-       position: absolute;
-       top: 50%;
-       left: 32px;
-       font-size: 3rem;
-       z-index: 10;
-       cursor: pointer;
-       color: #fff;
-       user-select: none;
-       background: linear-gradient(
-         -90deg,
-         rgba(255, 255, 255, 0) 0%,
-         rgba(0, 0, 0, 0.5) 100%);
-          width: 20px;
-          height: auto;
-               }
-}
-}
-
-.slide_image{
-       width: 100%;
-       height: 100%;
-       object-fit: cover;
-  }
+  position: relative;
+  width: 100%;
+    @media screen and (min-width: 1024px) {
+      height: 415px;
+      border-radius: 25px;
+    }
+      
     
-
-@media (min-width: 1250px) {
-       .slider {
-         height: 415px;
-         border-radius: 25px;
-       
-     
-       &_container{
-         width: 100px;
-      img {
-         width: 80px;
-       }
-     }
+  &_container{
+    
+    img{
+      height: auto;
+    width: 100%;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    width: 25px;
+    @media screen and (min-width: 768px) {
+      width: 100px;
+    }   
+    }
+    
+    .arrow_back{
+      background: linear-gradient(-90deg,hsla(0,0%,100%,0),rgba(0,0,0,.5));
+    left: 0;
+    top: 0;
+      
+      }
+    .arrow_forward{
+      background: linear-gradient(90deg,hsla(0,0%,100%,0),rgba(0,0,0,.5));
+      right: 0;
+      top: 0;
+    }
+    }
+  .active{
+    height: 415px;
+  }
+.slide_image{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    // @media screen and (min-width: 1024px) {
+    //   height: 415px;
+    // }
+      
 }
-}
-
+  }

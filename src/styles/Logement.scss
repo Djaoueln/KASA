@@ -1,8 +1,7 @@
 .logement{
-  margin: 0 20px;
-     
-        
-      
+  margin: 4.5%;
+  min-height: calc(100vh - 210px);
+  margin-top: auto;
   &_content{
     display: flex;
     justify-content: space-between;
