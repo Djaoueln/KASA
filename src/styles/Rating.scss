@@ -6,6 +6,7 @@
 .rating{
     display: flex;
     align-items: center;
+    margin-top: 37px;
     &_stars {
         margin-right: 5px;
         @media screen and (max-width: 768px) {

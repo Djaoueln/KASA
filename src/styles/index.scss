@@ -1,6 +1,6 @@
-@import '../styles/NavBar.scss';
-@import '../styles/Thumbnails.scss';
-@import '../styles/HeroBanner.scss';
+@import '../styles/Navigation.scss';
+@import '../styles/Thumb.scss';
+@import '../styles/Banner.scss';
 @import '../styles/Home.scss';
 @import '../styles/About.scss';
 @import '../styles/Tag.scss';
@@ -8,16 +8,17 @@
 @import '../styles/Collapse.scss';
 @import '../styles/SlideShow.scss';
 @import '../styles/Logement.scss';
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body
+{
    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+   font-family: 'Montserrat', sans-serif;
 }
 
 

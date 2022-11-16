@@ -1,4 +1,7 @@
-.tag {   
+                                          // COMPONENT: TAG 
+
+.tag 
+{   
     align-items: center;
     background: #ff6060;
     border-radius: 5px;
@@ -9,15 +12,18 @@
     font-style: normal;
     font-weight: 500;
     justify-content: center;
-    padding: 0 10px;
+    padding:2px;
     min-width: 84px;
-    @media screen and (min-width: 758px) {
-        min-width: 115px;
-        height: 25px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-    }
+    height: 18px;
+    @media screen and (min-width: 758px) 
+       {
+         min-width: 115px;
+         height: 25px;
+       }
+    @media screen and (min-width: 1200px) 
+       {
+         font-size: 14px;
+       }
 }
 
 

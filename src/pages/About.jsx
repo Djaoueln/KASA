@@ -1,10 +1,12 @@
 import React from "react";
-import HeroBanner from "../components/HeroBanner";
+import Banner from "../components/Banner";
 import aboutHb from "../assets/aboutHb.avif";
 import Collapse from "../components/Collapse";
 
 function About() {
-    const collapseTxt = [
+    //the collapse component
+    const collapseTxt = 
+      [
         {id:1, intitulé:"Fiabilité", text:"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.",
          },
 
@@ -16,23 +18,23 @@ function About() {
         
         {id:4, intitulé:"Sécurité", text:"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
         }
-]
+     ]
     return (
         <div className="about">
-        <div className="about_heroBanner">
-             <HeroBanner image={aboutHb} />
-             </div>
-            <div className="about_collapse">
-                {  collapseTxt.map((one, i) => {
+           <div className="about_Banner">
+                {/* the Banner component with the aboutHb image */}
+                <Banner image={aboutHb} />
+          </div>
+          <div className="about_collapse">
+                {/* collapseTxt is the text that will be displayed on the collapse component */}
+                {collapseTxt.map((one, i) => {
                     return (
-                    <Collapse intitulé={one.intitulé} text={one.text} key={i} />
-                    )
-                })    
-                }
-        </div>
-
+                        // the collapse component
+                        <Collapse intitulé={one.intitulé} text={one.text} key={i} />
+                      );})}
+          </div>
         </div>
     )
-
 }
+
 export default About;

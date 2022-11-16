@@ -1,25 +1,40 @@
-.about {
-    margin-bottom: 40px;
-    margin: 4.5%;
-    
-    &_heroBanner
+
+                                        // PAGE : ABOUT
+.about
+   {
+     margin-bottom: 40px;
+     margin: 4.5%;
+   
+   &_Banner
     {
-        margin-bottom: 2px;
-     img{
-         width: 100%;
-        @media screen and (max-width: 768px) {
-            height: 258px;
-        }
+      margin-bottom: 2px;
+
+     img
+      {
+        width: 100%;
+         @media screen and (max-width: 768px) 
+           {
+              height: 258px;
+           }
         
-    }
+      }
     }
 
- 
-  &_collapse {
-      @media screen and (min-width: 320px){
+  &_collapse 
+    {
+      @media screen and (min-width: 320px)
+        {
           gap: 35px;
           margin-top: 10px;
-      }
+        }
+    .collapse
+       {
+          @media screen and (min-width: 992px)
+            {
+              width: 88%;
+            }
+       }
+    }
   }
- }
+ 
  

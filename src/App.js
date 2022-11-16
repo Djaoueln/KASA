@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import About from "./pages/About";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
-import Header from "./components/NavBar";
+import Header from "./components/Navigation";
 import Logement from "./pages/Logement";
 import Footer from "./components/Footer";
-
-
 
 function App() {
   return (

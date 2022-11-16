@@ -1,0 +1,103 @@
+ 
+                                          // COMPONENTS : BANNER
+ 
+ .Banner
+     {
+      align-items: center;
+      background: #ff6060;
+      border-radius: 10px;
+      color: #fff;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+       @media screen and (min-width: 768px) 
+         {
+           height: 167px;
+           justify-content: center;
+         }
+       @media screen and (min-width: 1200px) 
+         {
+           justify-content: center;
+           font-size: 48px;
+           border-radius: 25px;
+           margin: 0 0 40px;
+           height: 223px;
+         }
+        
+    &_img
+      {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.7);
+          @media screen and (min-width: 1200px)
+           {
+             height: 223px;  
+           }
+      }
+     
+
+    &_title 
+      {
+        position: absolute;
+        font-weight: inherit;
+        font-size: 24px;
+        margin: 17px;
+        margin-right: 55px;
+           @media screen and (min-width: 768px) 
+             {
+              font-size: 36px;
+              justify-content: center;
+              align-items: center;
+              margin: 0 0 0 80px;
+             }
+  
+           @media screen and (min-width: 1200px) 
+             {
+              margin: 0;
+              font-size: 48px;
+             }
+      }
+        
+    @keyframes fadeInUp 
+      {
+           0% {
+               opacity: 0;
+               transform: translateY(5px);
+             }
+         100% {
+               opacity: 1;
+               transform: translateY(0);
+             }
+     }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
