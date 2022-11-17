@@ -47,6 +47,11 @@
                   {/* arrow_forward onClick to go to the next picture nextSlide function */}
                 <img src={arrowForward} alt="" className="arrow_forward" onClick={nextSlide}/>
                 </div>
+                <div className="slider_counter">
+                  {/* number of pictures displayed */}
+                  <p>{current + 1}/{pictures.length}</p>
+                </div>
+
                
                 
           </section>

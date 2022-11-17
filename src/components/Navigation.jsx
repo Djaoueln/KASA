@@ -11,7 +11,7 @@ const Header = () => {
             />
          <div className="nav-link">
           {/*the link to the home page, the link is active when the url is /home, the link is inactive when the url is not /home */}
-             <NavLink to="/" className={({ isActive }) =>
+             <NavLink to="/home" className={({ isActive }) =>
             isActive ? "nav-link--active" : "nav-link--inactive"}> 
               Accueil
              </NavLink>
