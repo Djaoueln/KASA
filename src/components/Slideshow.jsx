@@ -35,17 +35,17 @@
                           {/* if there is no picture, return null, else return the picture */}
                             {index === current && (
                               // the picture is in the pictures array
-                                <img src={picture} alt="house" className="slide_image"/>
+                                <img src={picture} alt="intérieur logement" className="slide_image"/>
                                 )}    
                         </div>
                     )
              })}  
                {/* the picture displayed is the picture with the index of the state current, the picture is in the pictures array  */}
                 <div className="slider_container">
-                  {/* // arrow_back onClick to go to the previous picture prevSlide function */}
-                <img src={arrowBack} alt="" className="arrow_back" onClick={prevSlide} />
-                  {/* arrow_forward onClick to go to the next picture nextSlide function */}
-                <img src={arrowForward} alt="" className="arrow_forward" onClick={nextSlide}/>
+                    {/* // arrow_back onClick to go to the previous picture prevSlide function */}
+                    <img src={arrowBack} alt="" className="arrow_back" onClick={prevSlide} />
+                    {/* arrow_forward onClick to go to the next picture nextSlide function */}
+                    <img src={arrowForward} alt="" className="arrow_forward" onClick={nextSlide}/>
                 </div>
                 <div className="slider_counter">
                   {/* number of pictures displayed */}

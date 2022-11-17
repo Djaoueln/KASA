@@ -5,9 +5,9 @@ import "../styles/Footer.scss";
 const Footer = () => {
     return (
         <footer className="footer">
-       {/*the logo is a link to the home page */}
-        <img src={logo} alt="logo" />
-        <p>© 2020 Kasa. All rights reserved</p>
+          {/*the logo is a link to the home page */}
+          <img src={logo} alt="logo kasa" />
+          <p>© 2022 Kasa. All rights reserved</p>
         </footer>
     );
     };
