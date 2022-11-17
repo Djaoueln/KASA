@@ -1,9 +1,9 @@
   import React, {useState} from "react";
-  import '../styles/SlideShow.scss';
+  import '../styles/Slideshow.scss';
   import arrowBack from "../assets/arrowBack.svg";
-    import arrowForward from "../assets/arrowForward.svg";
+  import arrowForward from "../assets/arrowForward.svg";
 
-  function Slideshow ({ pictures}) {
+  function Slideshow ({pictures}) {
    //  the state of the slideshow is the index of the picture displayed 
    const [current, setCurrent] = useState(0);
 

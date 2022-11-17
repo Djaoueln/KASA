@@ -1,5 +1,5 @@
 import React from "react";
-import SlideShow from "../components/SlideShow";
+import Slideshow from "../components/Slideshow.jsx";
 import "../styles/Logement.scss";
 import data from "../data/data.json";
 import { useParams } from "react-router-dom";
@@ -23,9 +23,8 @@ function Logement() {
         // the logement page
         <div className="logement">
             {/* SlideShow component key is the id of the logement, pictures is the array of pictures of the logement */}
-            <div className="logement_banner" key={id}>
-                
-               <SlideShow pictures={logement.pictures} />
+            <div className="logement_banner" key={id}>  
+               <Slideshow pictures={logement.pictures}/>
             </div>
                 {/* the logement details */}
                 <div className="logement_content">
