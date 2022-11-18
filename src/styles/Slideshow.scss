@@ -8,12 +8,13 @@
      height: 255px;
      overflow: hidden;
      position: relative;
-     width: 100%;
-         @media screen and (min-width: 1024px) 
+    //  width: 100%;
+         @media screen and (min-width: 1200px) 
            {
              height: 415px;
              border-radius: 25px;
              margin: auto;
+             width: 1102px;
           }
           @media screen and (min-width: 1440px) 
            {

@@ -81,9 +81,14 @@
         }
       @media screen and (min-width: 1200px) 
         {
+          margin-top: -203px;
+          margin-bottom: 71px;
+        }
+      @media screen and (min-width: 1440px) 
+        {
           flex-direction: column;
-          margin-top: -147px;
-          margin-bottom: 20px;
+          margin-top: -158px;
+          margin-bottom: -20px;
         }
 
       img

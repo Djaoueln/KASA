@@ -8,6 +8,16 @@
    &_Banner
     {
       margin-bottom: 2px;
+        @media screen and (min-width: 1200px)
+          {
+            width: 1102px;
+            margin: auto;
+          }
+        @media screen and (min-width: 1440px)
+          {
+            width: 1240px;
+            margin: auto;
+          }
 
      img
       {
@@ -28,10 +38,14 @@
           margin-top: 10px;
         }
     .collapse
-       {
-          @media screen and (min-width: 992px)
+       { 
+          @media screen and (min-width: 1200px)
             {
-              width: 88%;
+              width: 1102px;
+            }
+          @media screen and (min-width: 1440px)
+            {
+              width: 1023px;
             }
        }
     }
